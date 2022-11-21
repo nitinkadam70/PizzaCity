@@ -1,0 +1,5 @@
+# Pizza city
+
+```
+npm i
+```
