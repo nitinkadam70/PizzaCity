@@ -1,5 +1,12 @@
+import Navbar from './components/Navbar';
+
 function App() {
-  return <div>Pizza City</div>;
+  return (
+    <>
+      <Navbar />
+      <div>Pizza City</div>
+    </>
+  );
 }
 
 export default App;
