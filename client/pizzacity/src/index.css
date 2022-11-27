@@ -14,11 +14,13 @@
     sans-serif;
   font-family: 'Roboto', sans-serif;
 }
-
 .container {
   max-width: 1260px;
   margin: auto;
 }
-.selector-for-some-widget {
-  box-sizing: content-box;
+
+body::before {
+  display: block;
+  content: '';
+  height: 70px;
 }

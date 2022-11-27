@@ -3,49 +3,34 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div className="container-fluid">
-        <NavLink className="navbar-brand" to="/">
-          PizzaCity
+    <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div className="container">
+        <NavLink to={'/'} className="navbar-brand">
+          Pizza City
         </NavLink>
+
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#navmenu"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div
-          className="collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <div className="collapse navbar-collapse" id="navmenu">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink
-                className="nav-link active"
-                aria-current="page"
-                to="/aboutus"
-              >
+              <NavLink to={'/aboutus'} className="nav-link">
                 About us
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink to={'/cart'} className="nav-link">
+                Cart
+              </NavLink>
+            </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
