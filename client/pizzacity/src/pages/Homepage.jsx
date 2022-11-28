@@ -1,6 +1,8 @@
 import React from 'react';
+import { Navigate, useNavigate } from 'react-router-dom';
 import styles from '../styles/homepage.module.css';
 const Homepage = () => {
+  const navigate = useNavigate();
   return (
     <section className="bg-dark text-light p-5 p-lg-0 pt-lg-5 pb-lg-5 text-center text-sm-start">
       <div className="container">
@@ -15,9 +17,11 @@ const Homepage = () => {
               happiness
             </p>
             <button
+              onClick={() =>
+                (window.location.href =
+                  'https://www.zomato.com/parbhani/pizza-city-parbhani-locality/order')
+              }
               className="btn btn-primary btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#enroll"
             >
               Order here
             </button>
