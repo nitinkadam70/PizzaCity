@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div className="container">
-        <NavLink to={'/'} className="navbar-brand">
+        <NavLink to={'/'} className="navbar-brand bb-animate">
           Pizza City
         </NavLink>
 
