@@ -1,11 +1,13 @@
 import React from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import styles from '../styles/homepage.module.css';
+import { BsArrowRightCircleFill } from 'react-icons/bs';
+
 const Homepage = () => {
   const navigate = useNavigate();
   return (
     <>
-      <section className="bg-dark text-light p-5 p-lg-0 pt-lg-5 pb-lg-5 text-center text-sm-start">
+      <section className="bg-dark text-light p-5 p-lg-0 pt-lg-5 pb-lg-5 pt-md-5 text-center text-sm-start">
         <div className="container">
           <div className="d-sm-flex align-items-center justify-content-between">
             <div>
@@ -34,26 +36,28 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-      <section className="d-flex align-item-center">
-        <img
-          className="w-50"
-          src="https://media0.giphy.com/media/9KCNcFVQmZhRK/giphy.gif?cid=ecf05e47gqjqjrroooe3crxwm7oaav25uwavxndewhju7zeg&rid=giphy.gif&ct=g"
-          alt=""
-        />
+      <section className="bg-warning pb-5 text-center">
+        <div className="d-lg-flex flex-md-column flex-lg-row flex-sm-column align-items-center justify-content-between w-100">
+          <img
+            className="w-100"
+            src="https://media0.giphy.com/media/9KCNcFVQmZhRK/giphy.gif?cid=ecf05e47gqjqjrroooe3crxwm7oaav25uwavxndewhju7zeg&rid=giphy.gif&ct=g"
+            alt=""
+          />
 
-        <img
-          className="w-50"
-          src="https://media4.giphy.com/media/CqtG4f5UF9G5q/giphy.gif?cid=ecf05e47d5lumlox4wu2176xjbee9kxm8qjg46qk4zug4dtp&rid=giphy.gif&ct=g"
-          alt=""
-        />
+          <img
+            className="w-100"
+            src="https://media4.giphy.com/media/CqtG4f5UF9G5q/giphy.gif?cid=ecf05e47d5lumlox4wu2176xjbee9kxm8qjg46qk4zug4dtp&rid=giphy.gif&ct=g"
+            alt=""
+          />
+        </div>
       </section>
       <section className="bg-image text-dark p-5 p-lg-0 pt-lg-5 pb-lg-5 text-center text-sm-start">
         <div className="container">
-          <div className="d-sm-flex align-items-center justify-content-between">
+          <div className="d-lg-flex d-md-flex d-md-row flex-lg-row flex-sm-column align-items-center justify-content-between">
             <div>
-              <h1>
-                Also Order Form{' '}
-                <span className="text-light bg-danger p-2 rounded">
+              <h1 className="lh-lg">
+                {'Also Order Form' + ' '}
+                <span className="text-light bg-danger p-2 rounded mt-2">
                   <em>ZOMATO</em>
                 </span>
               </h1>
@@ -71,7 +75,7 @@ const Homepage = () => {
               </button>
             </div>
             <img
-              className="bg-light img-fluid w-50 d-none d-sm-block"
+              className="bg-light img-fluid w-50"
               src="https://techstory.in/wp-content/uploads/2021/07/SEBI-grants-approval-to-Zomatos-blockbuster-IPO.jpg"
               alt=""
             />
