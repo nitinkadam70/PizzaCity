@@ -12,14 +12,7 @@ app.use(cors());
 app.get('/', (req, res) => {
   res.send('Homepage Pizzacity');
 });
-//Read Data or Get Data
-app.get('/dishes', (req, res) => {
-  fs.readFile('./db.json', { encoding: 'utf-8' }, (err, data) => {
-    //res.setHeader('Content-type', 'application/json');
-    //if we wanna send json data then just res.json(JSON.parse(data))
-    res.json(JSON.parse(data));
-  });
-});
+
 
 app.all('*', (req, res) => {
   res.status(404).send('Not Found');
