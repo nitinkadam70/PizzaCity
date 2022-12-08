@@ -4,12 +4,14 @@ import {
   GET_DISHES_SUCCESS,
 } from './action';
 
+//Initial State
 const initState = {
   loading: false,
   dishes: [],
   error: false,
 };
 
+//Logic
 export const dishesReducer = (state = initState, action) => {
   switch (action.type) {
     case GET_DISHES_LOADING:

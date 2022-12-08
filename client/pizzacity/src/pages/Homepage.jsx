@@ -7,6 +7,7 @@ const Homepage = () => {
   const navigate = useNavigate();
   return (
     <>
+      {/* ShowCase */}
       <section className="bg-dark text-light p-5 p-lg-0 pt-lg-5 pb-lg-5 pt-md-5 text-center text-sm-start">
         <div className="container">
           <div className="d-sm-flex align-items-center justify-content-between">
@@ -36,6 +37,8 @@ const Homepage = () => {
           </div>
         </div>
       </section>
+
+      {/* GIF Foods */}
       <section className="bg-warning pb-5 text-center">
         <div className="d-lg-flex flex-md-column flex-lg-row flex-sm-column align-items-center justify-content-between w-100">
           <img
@@ -51,6 +54,8 @@ const Homepage = () => {
           />
         </div>
       </section>
+
+      {/* Zomato Section */}
       <section className="bg-image text-dark p-5 p-lg-0 pt-lg-5 pb-lg-5 text-center text-sm-start">
         <div className="container">
           <div className="d-lg-flex d-md-flex d-md-row flex-lg-row flex-sm-column align-items-center justify-content-between">

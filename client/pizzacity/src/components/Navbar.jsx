@@ -5,12 +5,15 @@ import { FcAbout } from 'react-icons/fc';
 
 const Navbar = () => {
   return (
+    //Main Navbar
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div className="container">
+        {/* Logo */}
         <NavLink to={'/'} className="navbar-brand bb-animate">
           Pizza City
         </NavLink>
 
+        {/* Toggle Button */}
         <button
           className="navbar-toggler"
           type="button"
@@ -20,6 +23,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
+        {/* Navlinks */}
         <div className="collapse navbar-collapse" id="navmenu">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
@@ -33,7 +37,7 @@ const Navbar = () => {
             <li className="nav-item">
               <NavLink to={'/aboutus'} className="nav-link">
                 <span>
-                  <FcAbout size={'20px'} />{" "}
+                  <FcAbout size={'20px'} />{' '}
                 </span>
                 About us
               </NavLink>

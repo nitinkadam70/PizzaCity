@@ -7,6 +7,7 @@ import {
 import thunk from 'redux-thunk';
 import { dishesReducer } from './reducer';
 
+//Root Reducer
 const rootReducer = combineReducers({
   dishes: dishesReducer,
 });

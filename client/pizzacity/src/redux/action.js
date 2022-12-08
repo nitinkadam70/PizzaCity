@@ -18,6 +18,7 @@ export const getDishError = () => ({
   type: GET_DISHES_ERROR,
 });
 
+//Fetching Data
 export const getDishes = (payload) => (dispatch) => {
   let userid = localStorage.getItem('userid');
   dispatch(getDishloading());

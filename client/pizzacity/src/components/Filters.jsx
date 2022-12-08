@@ -24,18 +24,27 @@ const filterButtons = [
     id: 3,
     imgLink:
       'https://freepngimg.com/save/512-sandwich-png-image/3485x1984',
-    value: 'Sandwitch',
+    value: 'sandwich',
   },
   {
     id: 4,
     imgLink:
       'https://img.freepik.com/premium-vector/cocktails-logo-inspiration-drink-glass-bar-restaurant_63578-164.jpg?w=2000',
-    value: 'cocktails',
+    value: 'Drinks',
+  },
+  {
+    id: 5,
+    imgLink:
+      'https://img.freepik.com/premium-vector/snacks-logo-design_642489-18.jpg?w=2000',
+    value: 'Snacks',
   },
 ];
 const Filters = () => {
   const dispatch = useDispatch();
+  const [filterText, setFilterText] = useState('');
   const [searchText, setSearchText] = useState('');
+
+  //Search Bar
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -46,19 +55,33 @@ const Filters = () => {
         : toast('Please Enter Cafe Food To Search');
     }
   };
+
+  //Filter By Particular Dish
+  const handleFilter = (value) => {
+    const params = { type: value };
+    {
+      value && dispatch(getDishes(params));
+    }
+  };
+
   return (
+    // filters page Mini Navabar
     <nav
       className="navbar navbar-light d-flex align-items-center justify-content-around mini-nav-filter"
       style={{ backgroundColor: '#e3f2fd' }}
     >
+      {/* Contact Number For Order */}
       <h5 className="navbar-brand">
         <span>
           <BiPhoneCall size={'31px'} color={'green'} />
         </span>{' '}
         Ping for Order +919518318549
       </h5>
+
+      {/* Filter By Particular Dish */}
       {filterButtons.map((elem) => (
         <button
+          onClick={() => handleFilter(elem.value)}
           key={elem.id}
           className="btn btn-default"
           style={{ width: '7rem', height: '6rem' }}
@@ -70,10 +93,13 @@ const Filters = () => {
           />
         </button>
       ))}
+
       <div
         className="btn-group btn-group-toggle"
         data-toggle="buttons"
       ></div>
+
+      {/* Search Bar */}
       <form
         className="form-inline d-flex align-items-center"
         onSubmit={handleSubmit}

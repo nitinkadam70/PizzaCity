@@ -1,17 +1,22 @@
 import React from 'react';
 
 const DishCard = ({ item }) => {
+  //Destructing Item here
   const { id, title, price, tags, description, img, type } = item;
+
   return (
+    // Card
     <div
       className="card text-center p-2 h-100"
       style={{ width: '16rem' }}
     >
+      {/* Image */}
       <img
         className="card-img-top w-50 m-auto border border-light"
         src={img}
         alt={title}
       />
+      {/* Body */}
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
         <span className="btn btn-outline-dark">₹{price}</span>
