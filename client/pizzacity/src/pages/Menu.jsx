@@ -16,7 +16,8 @@ const Menu = () => {
     if (dishes?.length == 0) {
       dispatch(getDishes());
     }
-  }, []);
+  }, [dishes?.length]);
+
   return (
     <>
       <section className="bg-dark border-bottom">
