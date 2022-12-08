@@ -25,3 +25,12 @@ body::before {
   height: 70px;
 }
 
+.card-grid {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
