@@ -12,16 +12,16 @@ export default function Footer() {
   return (
     <MDBFooter className="bg-dark text-center text-white ">
       <section className="mb-4 pt-4 d-flex gap-4 align-items-center justify-content-center">
-        <div className="border rounded p-2">
+        <div className="border rounded p-2 hover-class">
           <FaFacebook size={'20px'} />
         </div>
-        <div className="border rounded p-2">
+        <div className="border rounded p-2 hover-class">
           <AiFillTwitterCircle size={'20px'} />
         </div>
-        <div className="border rounded p-2">
+        <div className="border rounded p-2 hover-class">
           <BsInstagram size={'20px'} />
         </div>
-        <div className="border rounded p-2">
+        <div className="border rounded p-2 hover-class">
           <AiFillGoogleCircle size={'20px'} />
         </div>
       </section>

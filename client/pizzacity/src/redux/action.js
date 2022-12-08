@@ -18,12 +18,13 @@ export const getDishError = () => ({
   type: GET_DISHES_ERROR,
 });
 
-export const getDishes = () => (dispatch) => {
+export const getDishes = (payload) => (dispatch) => {
   let userid = localStorage.getItem('userid');
   dispatch(getDishloading());
   axios({
     method: 'GET',
     url: process.env.REACT_APP_API_URL,
+    params: { ...payload },
   })
     .then((res) => {
       dispatch(getDishSuccess(res.data));

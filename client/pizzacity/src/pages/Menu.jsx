@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import DishCard from '../components/DishCard';
+import Filters from '../components/Filters';
 import { getDishes } from '../redux/action';
 
 const Menu = () => {
@@ -18,7 +19,16 @@ const Menu = () => {
   return (
     <>
       <section className="bg-dark border-bottom">
+        <Filters />
         <div className="card-grid p-5">
+          {error && (
+            <div>
+              <img
+                src="https://cdn.dribbble.com/users/547471/screenshots/3063720/not_found.gif"
+                alt=""
+              />
+            </div>
+          )}
           {loading ? (
             <div
               class="spinner-border text-light"

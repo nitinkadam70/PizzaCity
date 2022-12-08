@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { MdFastfood } from 'react-icons/md';
+import { FcAbout } from 'react-icons/fc';
 
 const Navbar = () => {
   return (
@@ -22,11 +24,17 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink to={'/menu'} className="nav-link">
-                Our Menu
+                <span>
+                  <MdFastfood size={'20px'} />
+                </span>{' '}
+                Our Food{' '}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to={'/aboutus'} className="nav-link">
+                <span>
+                  <FcAbout size={'20px'} />{" "}
+                </span>
                 About us
               </NavLink>
             </li>

@@ -24,7 +24,10 @@ body::before {
   content: '';
   height: 70px;
 }
-
+.hover-class:hover {
+  background-color: white;
+  color: #202124;
+}
 .card-grid {
   width: 80%;
   margin: auto;
@@ -34,6 +37,17 @@ body::before {
   align-items: center;
   gap: 20px;
 }
+.nav-link:hover {
+  color: orange !important;
+}
+
+/* Menu page filter Navabar styles
+.mini-nav-filter {
+  width: 100%;
+  position: sticky !important;
+  z-index: 5000 !important;
+  top: 0;
+} */
 @media only screen and (max-width: 1000px) {
   .card-grid {
     grid-template-columns: repeat(3, auto);
