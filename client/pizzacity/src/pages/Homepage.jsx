@@ -1,7 +1,5 @@
 import React from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
-import styles from '../styles/homepage.module.css';
-import { BsArrowRightCircleFill } from 'react-icons/bs';
+import { useNavigate } from 'react-router-dom';
 
 const Homepage = () => {
   const navigate = useNavigate();

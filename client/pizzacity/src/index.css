@@ -41,6 +41,14 @@ body::before {
   color: orange !important;
 }
 
+.card-hover {
+  transition: transform 0.8s; /* Animation */
+  cursor: pointer;
+}
+.card-hover:hover {
+  border: 5px solid greenyellow;
+  transform: scale(1.04);
+}
 /* Menu page filter Navabar styles
 .mini-nav-filter {
   width: 100%;

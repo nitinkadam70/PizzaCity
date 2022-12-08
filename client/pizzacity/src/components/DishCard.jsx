@@ -7,7 +7,7 @@ const DishCard = ({ item }) => {
   return (
     // Card
     <div
-      className="card text-center p-2 h-100"
+      className="card text-center p-2 h-100 card-hover"
       style={{ width: '16rem' }}
     >
       {/* Image */}

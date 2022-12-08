@@ -4,6 +4,8 @@ import { Route, Routes } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
 import Footer from './components/Footer';
 import Menu from './pages/Menu';
+import Offers from './pages/Offers';
+import Error from './components/Error';
 function App() {
   return (
     <>
@@ -12,10 +14,8 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/menu" element={<Menu />} />
-        <Route
-          path="*"
-          element={<h1>ERROR: 404 - Page Not Found</h1>}
-        />
+        <Route path="/offers" element={<Offers />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </>
