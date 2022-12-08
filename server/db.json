@@ -1,0 +1,283 @@
+{
+  "pizzaCity": [
+    {
+      "id": 1,
+      "title": "Paneer Tikka Pizza [regular size]",
+      "price": "230",
+      "tags": "",
+      "description": "Tandoori paneer, onion, capsicum, tomato and olives.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/7fb/8bf63849a5e763ab3fd3785f38c547fb.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 2,
+      "title": "Spicy Paneer Pizza Regular size]",
+      "price": "220",
+      "tags": "SPICY",
+      "description": "Spicy paneer, capsicum, jalapenos and onion",
+      "img": "https://b.zmtcdn.com/data/dish_photos/f3c/884862ad87939dd424d7cb521bf48f3c.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 3,
+      "title": "Double Cheese Margherita Pizza Regular size ]",
+      "price": "180",
+      "tags": "",
+      "description": "Double cheese and tomato.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/54e/dfd16ca6c7fb1c820287e586a64ea54e.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 4,
+      "title": "Simply Cheese and Corn Pizza Regular size]",
+      "price": "150",
+      "tags": "BESTSELLER",
+      "description": "Simple cheese and corn topping.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/9a7/77629063333ef19d0d46436c164069a7.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 5,
+      "title": "Simply Cheese Pizza Regular size]",
+      "price": "130",
+      "tags": "",
+      "description": "",
+      "img": "https://b.zmtcdn.com/data/dish_photos/d8f/76bcad1e0d416f668c7039610cf2ad8f.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 6,
+      "title": "Veg Supreme Pizza [Regular size]",
+      "price": "310",
+      "tags": "",
+      "description": "Onion, capsicum, tomato, jalapenos, sweet corn and olives.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/568/7a3bd72f58fa95a02aa2f514d8dc0568.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 7,
+      "title": "Corn and Cheese Pizza [Regular size]",
+      "price": "290",
+      "tags": "",
+      "description": "Onion, capsicum, sweet corn, olives and red paprika.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/86d/e7db858e8976788997ed591bce1d786d.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 8,
+      "title": "Veg Mexican Pizza ( Regular size ]",
+      "price": "280",
+      "tags": "",
+      "description": "Capsicum, onion, tomato, olives and red paprika.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/657/44be6f5c66987c24f9f320ddd47cb657.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 9,
+      "title": "Paneer Makhani Pizza [Regular size]",
+      "price": "230",
+      "tags": "",
+      "description": "Paneer Makhani, onion, capsicum, tomato and olives.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/7fb/8bf63849a5e763ab3fd3785f38c547fb.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 10,
+      "title": "Mushroom Pizza [Regular size]",
+      "price": "220",
+      "tags": "",
+      "description": "Spicy mushroom, onion, capsicum, tomato and jalapenos.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/ef3/a444ef4e33f2016c0abffef97f867ef3.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 11,
+      "title": "Veg Delight Pizza Regular size ]",
+      "price": "200",
+      "tags": "",
+      "description": "Onion, capsicum, tomato and olives",
+      "img": "https://b.zmtcdn.com/data/dish_photos/5b2/739774f2f418ca191ed9053bf34125b2.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 12,
+      "title": "Chilli Garlic Spicy Pizza [Regular size]",
+      "price": "200",
+      "tags": "SPICY",
+      "description": "Capsicum, green chilli and garlic.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/c86/989cc8ad94e63d7141bcbefd2a32cc86.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 13,
+      "title": "Margherita Pizza [Regular size]",
+      "price": "170",
+      "tags": "",
+      "description": "Tomato and basil.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/54e/dfd16ca6c7fb1c820287e586a64ea54e.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 14,
+      "title": "Cheese Delight Pizza.Regular size",
+      "price": "270",
+      "tags": "",
+      "description": "Double cheese, capsicum, onion, jalapenos and olives.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/54e/dfd16ca6c7fb1c820287e586a64ea54e.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Pizza"
+    },
+    {
+      "id": 15,
+      "title": "Veg Spicy Cheese Burger",
+      "price": "110",
+      "tags": "SPICY",
+      "description": "Veg Spicy Cheese Burger",
+      "img": "https://b.zmtcdn.com/data/dish_photos/d02/2be9c98a74fd753cbdad4ad9475d0d02.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Burger"
+    },
+    {
+      "id": 16,
+      "title": "Veg Classic Burger",
+      "price": "80",
+      "tags": "",
+      "description": "Veg Classic Burger",
+      "img": "https://b.zmtcdn.com/data/dish_photos/f34/3c7e09c9e718a23046af8ea03d688f34.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Burger"
+    },
+    {
+      "id": 17,
+      "title": "Veg Spicy Burger",
+      "price": "85",
+      "tags": "SPICY",
+      "description": "Veg Spicy Burger",
+      "img": "https://b.zmtcdn.com/data/dish_photos/ffb/6fe726948b2258772abd092f04f4effb.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Burger"
+    },
+    {
+      "id": 18,
+      "title": "Veg Cheese Burger",
+      "price": "100",
+      "tags": "",
+      "description": "Veg Cheese Burger",
+      "img": "https://b.zmtcdn.com/data/dish_photos/d02/2be9c98a74fd753cbdad4ad9475d0d02.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Burger"
+    },
+    {
+      "id": 19,
+      "title": "Grilled Fresh Veg Sandwich",
+      "price": "80",
+      "tags": "",
+      "description": "Grilled Fresh Veg Sandwich",
+      "img": "https://b.zmtcdn.com/data/dish_photos/a90/3f2579f6d92cafcd04fc02f9a6bdba90.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "sandwich"
+    },
+    {
+      "id": 20,
+      "title": "Paneer Makhani Sandwich",
+      "price": "90",
+      "tags": "",
+      "description": "Paneer Makhani Sandwich",
+      "img": "https://b.zmtcdn.com/data/dish_photos/8ba/36adb6286debbb2c422f277f2f6168ba.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "sandwich"
+    },
+    {
+      "id": 21,
+      "title": "Paneer Tikka Sandwich",
+      "price": "90",
+      "tags": "",
+      "description": "Paneer Tikka Sandwich",
+      "img": "https://b.zmtcdn.com/data/dish_photos/690/86354669f3958e92997402228d606690.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "sandwich"
+    },
+    {
+      "id": 22,
+      "title": "Chilli Garlic Toast",
+      "price": "90",
+      "tags": "",
+      "description": "Chilli Garlic Toast",
+      "img": "https://b.zmtcdn.com/data/dish_photos/6e6/9cdf3f865d1016416702ddf9341236e6.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "sandwich"
+    },
+    {
+      "id": 23,
+      "title": "Garlic Bread",
+      "price": "90",
+      "tags": "",
+      "description": "Garlic Bread",
+      "img": "https://b.zmtcdn.com/data/dish_photos/3f8/0766c8da1acff74fb3bf525b5069f3f8.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Snacks"
+    },
+    {
+      "id": 24,
+      "title": "Masala Nuggets",
+      "price": "80",
+      "tags": "",
+      "description": "Masala Nuggets",
+      "img": "https://b.zmtcdn.com/data/dish_photos/4bc/726369162ec0cc9de297e4b64ee2e4bc.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Snacks"
+    },
+    {
+      "id": 25,
+      "title": "Peri Peri Fries",
+      "price": "90",
+      "tags": "",
+      "description": "Peri Peri Fries",
+      "img": "https://b.zmtcdn.com/data/dish_photos/d0d/b08cf2542f97c1d823a5df200dbead0d.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Snacks"
+    },
+    {
+      "id": 26,
+      "title": "Cheese Nuggets",
+      "price": "80",
+      "tags": "",
+      "description": "Cheese Nuggets",
+      "img": "https://b.zmtcdn.com/data/dish_photos/4bc/726369162ec0cc9de297e4b64ee2e4bc.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Snacks"
+    },
+    {
+      "id": 27,
+      "title": "Pineapple Milkshake",
+      "price": "80",
+      "tags": "",
+      "description": "Deliciously refreshing pineapple shake is made by blending crushed pineapple, ice cream, cinnamon and milk into a great tasting cold beverage",
+      "img": "https://b.zmtcdn.com/data/dish_photos/7f6/e664c6786397e2d957051a492cf9d7f6.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Drinks"
+    },
+    {
+      "id": 28,
+      "title": "Chocolate Milkshake",
+      "price": "80",
+      "tags": "",
+      "description": "Chocolate milkshake basically a cold sweet beverage prepared from cocoa powder, full cream milk and vanilla ice cream.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/055/ea536fb8061828301d738ebcb8c18055.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Drinks"
+    },
+    {
+      "id": 29,
+      "title": "Strawberry Milkshake",
+      "price": "80",
+      "tags": "",
+      "description": "Seriously creamy beverage with richness of dense strawberry ice cream and fresh milk.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/39f/eac512044215da3885c37cc7b2fa939f.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Drinks"
+    },
+    {
+      "id": 30,
+      "title": "Butterscotch Milkshake",
+      "price": "80",
+      "tags": "",
+      "description": "A sweet, cold beverage that is usually made from milk, flavoring such as butterscotch, caramel sauce, chocolate syrup or fruit syrup.",
+      "img": "https://b.zmtcdn.com/data/dish_photos/437/20ffdd44e16bacf7438f481953682437.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Drinks"
+    },
+    {
+      "id": 31,
+      "title": "KitKat Milkshake",
+      "price": "90",
+      "tags": "",
+      "description": "Seriously creamy beverage with richness of ice cream and fresh milk flavoured with crunch of KitKat",
+      "img": "https://b.zmtcdn.com/data/dish_photos/fc6/b04806d02bcd80f708134f3d2c604fc6.jpg?output-format=webp&fit=around|130:130&crop=130:130;*,*",
+      "type": "Drinks"
+    }
+  ]
+}
