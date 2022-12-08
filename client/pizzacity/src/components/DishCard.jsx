@@ -14,8 +14,16 @@ const DishCard = ({ item }) => {
       />
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
-        <span className="badge badge-success">₹{price}</span>
-        <p className="card-text">{description}</p>
+        <span className="btn btn-outline-dark">₹{price}</span>
+        <br />
+        {tags == 'SPICY' && (
+          <span className="btn-danger btn-sm">{tags}</span>
+        )}
+        {tags == 'BESTSELLER' && (
+          <span className="btn-warning btn-sm">{tags}</span>
+        )}
+        <p className="card-text text-color-gray">{description}</p>
+        <span className="btn-secondary btn-sm">{type}</span>
       </div>
     </div>
   );

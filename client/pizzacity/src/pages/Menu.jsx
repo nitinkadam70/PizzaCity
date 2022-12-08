@@ -15,11 +15,21 @@ const Menu = () => {
       dispatch(getDishes());
     }
   }, []);
-  console.log(dishes);
   return (
-    <div className="card-grid">
-      {dishes && dishes.map((item) => <DishCard item={item} />)}
-    </div>
+    <>
+      <section className="bg-dark border-bottom">
+        <div className="card-grid p-5">
+          {loading ? (
+            <div
+              class="spinner-border text-light"
+              role="status"
+            ></div>
+          ) : (
+            dishes && dishes.map((item) => <DishCard item={item} />)
+          )}
+        </div>
+      </section>
+    </>
   );
 };
 
