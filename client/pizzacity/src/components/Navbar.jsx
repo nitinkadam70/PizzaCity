@@ -1,20 +1,29 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo3 from '../images/logo3.gif';
 import {
   MdFastfood,
   MdOutlineLocalOffer,
   MdRateReview,
 } from 'react-icons/md';
 import { FcAbout } from 'react-icons/fc';
-
+import { GiFullPizza } from 'react-icons/gi';
 const Navbar = () => {
   return (
     //Main Navbar
-    <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-2.5 fixed-top">
       <div className="container">
         {/* Logo */}
         <NavLink to={'/'} className="navbar-brand bb-animate">
-          Pizza City
+          <img
+            style={{
+              overflow: 'hidden',
+              width: '142px',
+              display: 'inline-block',
+            }}
+            src={logo3}
+            alt=""
+          />
         </NavLink>
 
         {/* Toggle Button */}
