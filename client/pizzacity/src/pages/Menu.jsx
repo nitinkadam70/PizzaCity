@@ -4,19 +4,22 @@ import { useDispatch, useSelector } from 'react-redux';
 import DishCard from '../components/DishCard';
 import Error from '../components/Error';
 import Filters from '../components/Filters';
-import { useSearchParams } from 'react-router-dom';
 import { getDishes } from '../redux/action';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+import { toast } from 'react-toastify';
+
 import {
   MdOutlineKeyboardArrowRight,
   MdOutlineKeyboardArrowLeft,
 } from 'react-icons/md';
-import { GiConsoleController } from 'react-icons/gi';
 
 const Menu = () => {
   const [pageNo, setPageNo] = useState(1);
   const [sortValue, setSortValue] = useState('ASC');
   const [filterText, setFilterText] = useState('');
   const [searchText, setSearchText] = useState('');
+
   const dispatch = useDispatch();
   const { loading, dishes, error } = useSelector(
     (store) => store.dishes
@@ -29,11 +32,9 @@ const Menu = () => {
       _sort: 'price',
       _order: sortValue,
       type: filterText || null,
-      q: searchText,
     };
     if (
       dishes?.length == 0 ||
-      searchText.length > 0 ||
       pageNo ||
       sortValue ||
       filterText.length > 0
@@ -45,11 +46,18 @@ const Menu = () => {
     pageNo,
     sortValue,
     filterText.length > 0,
-    searchText.length > 0,
     filterText,
   ]);
 
-  const handleSearch = () => {};
+  const handleSearch = (e) => {
+    e.preventDefault();
+    const params = { q: searchText };
+    {
+      searchText
+        ? dispatch(getDishes(params))
+        : toast('Please Enter Cafe Food To Search');
+    }
+  };
 
   return (
     <>
@@ -120,6 +128,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-
-

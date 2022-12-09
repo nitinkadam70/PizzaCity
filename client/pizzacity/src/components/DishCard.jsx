@@ -19,15 +19,18 @@ const DishCard = ({ item }) => {
       {/* Body */}
       <div className="card-body">
         <div className="row">
-          <h5 className="card-title w-100 col-2 text-truncate mb-2">
+          {/* Title */}
+          <h5 className="card-title w-100 text-truncate mb-2">
             {title}
           </h5>
         </div>
+        {/* price and type */}
         <div className="mb-2">
           <span className="btn btn-outline-dark">₹{price}</span>
           <span className="btn-secondary btn-sm">{type}</span>
         </div>
 
+        {/* Tags */}
         <div className="position-absolute top-0 translate-middle">
           {tags == 'SPICY' && (
             <span className="btn-danger btn-sm">{tags}</span>
@@ -36,6 +39,7 @@ const DishCard = ({ item }) => {
             <span className="btn-warning btn-sm">{tags}</span>
           )}
         </div>
+        {/* Description */}
         <p className="card-text text-color-gray text-justify ">
           {description}
         </p>

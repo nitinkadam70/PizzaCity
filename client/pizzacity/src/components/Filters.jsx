@@ -3,9 +3,6 @@ import { useState } from 'react';
 import { BiPhoneCall } from 'react-icons/bi';
 import { useDispatch } from 'react-redux';
 import { getDishes } from '../redux/action';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.min.css';
-import { toast } from 'react-toastify';
 import { GiFullPizza } from 'react-icons/gi';
 const filterButtons = [
   {
@@ -45,19 +42,6 @@ const Filters = ({
   handleSearch,
   setPageNo,
 }) => {
-  const dispatch = useDispatch();
-
-  //Search Bar
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // const params = { q: searchText };
-    // {
-    //   searchText
-    //     ? dispatch(getDishes(params))
-    //     : toast('Please Enter Cafe Food To Search');
-    // }
-  };
-
   return (
     // filters page Mini Navabar
     <nav
@@ -91,6 +75,7 @@ const Filters = ({
         </button>
       ))}
 
+      {/* Toogleer */}
       <div
         className="btn-group btn-group-toggle"
         data-toggle="buttons"
@@ -99,7 +84,7 @@ const Filters = ({
       {/* Search Bar */}
       <form
         className="form-inline d-flex align-items-center"
-        onSubmit={handleSubmit}
+        onSubmit={handleSearch}
       >
         <input
           onChange={(e) => setSearchText(e.target.value)}

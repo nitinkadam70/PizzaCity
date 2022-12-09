@@ -12,7 +12,7 @@ const Reviews = () => {
   }, [loading]);
 
   return (
-    <div className="container">
+    <div className="container" style={{ height: '60vh' }}>
       {loading && (
         <center className="mt-2">
           <div
