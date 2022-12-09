@@ -77,9 +77,9 @@ const Menu = () => {
             className="form-select w-25"
             onChange={(e) => setSortValue(e.target.value)}
           >
-            <option>Sort By Price</option>
-            <option value="ASC">Low to High</option>
-            <option value="DESC">High to Low</option>
+            <option>Sort By...</option>
+            <option value="ASC">Price: Low to High</option>
+            <option value="DESC">Price: High to Low</option>
           </select>
           <div className="d-flex align-items-center justify-content-around gap-4">
             <button

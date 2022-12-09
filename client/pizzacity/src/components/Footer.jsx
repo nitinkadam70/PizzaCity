@@ -8,7 +8,7 @@ import { SiGmail } from 'react-icons/si';
 
 export default function Footer() {
   return (
-    <MDBFooter className="bg-dark text-center text-white position-absolute bottom-0 w-100">
+    <MDBFooter className="bg-dark text-center text-white w-100">
       {/* Social Meadia Icons */}
       <section className="mb-4 pt-4 d-flex gap-4 align-items-center justify-content-center">
         <div className="border rounded p-2 hover-class">
