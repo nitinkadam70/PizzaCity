@@ -3,10 +3,8 @@ import { MDBFooter } from 'mdb-react-ui-kit';
 
 import { FaFacebook } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
-import {
-  AiFillTwitterCircle,
-  AiFillGoogleCircle,
-} from 'react-icons/ai';
+import { AiFillTwitterCircle } from 'react-icons/ai';
+import { SiGmail } from 'react-icons/si';
 
 export default function Footer() {
   return (
@@ -22,8 +20,13 @@ export default function Footer() {
         <div className="border rounded p-2 hover-class">
           <BsInstagram size={'20px'} />
         </div>
-        <div className="border rounded p-2 hover-class">
-          <AiFillGoogleCircle size={'20px'} />
+        <div
+          onClick={() => {
+            window.location.href = 'mailto:Pizzacitycafe@gmail.com';
+          }}
+          className="border rounded p-2 hover-class"
+        >
+          <SiGmail size={'20px'} />
         </div>
       </section>
 
@@ -34,7 +37,6 @@ export default function Footer() {
             className="w-100"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.6537523448706!2d76.78996231490389!3d19.25391618698605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd019b7c8ec96f1%3A0xa9dd05c70da44c72!2sPizza%20city%20pizzeria%20%26%20cafe!5e0!3m2!1sen!2sin!4v1670440689752!5m2!1sen!2sin"
             loading="lazy"
-       
           ></iframe>
         </div>
       </section>

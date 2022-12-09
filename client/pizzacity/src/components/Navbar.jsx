@@ -1,6 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { MdFastfood, MdOutlineLocalOffer } from 'react-icons/md';
+import {
+  MdFastfood,
+  MdOutlineLocalOffer,
+  MdRateReview,
+} from 'react-icons/md';
 import { FcAbout } from 'react-icons/fc';
 
 const Navbar = () => {
@@ -35,6 +39,14 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink to={'/reviews'} className="nav-link">
+                <span>
+                  <MdRateReview size={'20px'} />
+                </span>{' '}
+                Our Reviews{' '}
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink to={'/offers'} className="nav-link">
                 <span>
                   <MdOutlineLocalOffer size={'20px'} />
@@ -42,6 +54,7 @@ const Navbar = () => {
                 Offers{' '}
               </NavLink>
             </li>
+
             <li className="nav-item">
               <NavLink to={'/aboutus'} className="nav-link">
                 <span>

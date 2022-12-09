@@ -35,18 +35,18 @@ body::before {
   grid-template-columns: repeat(4, auto);
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 .nav-link:hover {
   color: orange !important;
 }
 
 .card-hover {
-  transition: transform 0.8s; /* Animation */
+  transition: transform 0.8s;
   cursor: pointer;
 }
 .card-hover:hover {
-  border: 5px solid greenyellow;
+  border: 5px solid orange;
   transform: scale(1.04);
 }
 /* Menu page filter Navabar styles
@@ -71,4 +71,7 @@ body::before {
   .card-grid {
     grid-template-columns: repeat(1, auto);
   }
+}
+body {
+  overflow-y: scroll;
 }

@@ -39,29 +39,23 @@ const filterButtons = [
     value: 'Snacks',
   },
 ];
-const Filters = () => {
+const Filters = ({
+  setFilterText,
+  setSearchText,
+  handleSearch,
+  setPageNo,
+}) => {
   const dispatch = useDispatch();
-  const [filterText, setFilterText] = useState('');
-  const [searchText, setSearchText] = useState('');
 
   //Search Bar
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const params = { q: searchText };
-    {
-      searchText
-        ? dispatch(getDishes(params))
-        : toast('Please Enter Cafe Food To Search');
-    }
-  };
-
-  //Filter By Particular Dish
-  const handleFilter = (value) => {
-    const params = { type: value };
-    {
-      value && dispatch(getDishes(params));
-    }
+    // const params = { q: searchText };
+    // {
+    //   searchText
+    //     ? dispatch(getDishes(params))
+    //     : toast('Please Enter Cafe Food To Search');
+    // }
   };
 
   return (
@@ -81,7 +75,10 @@ const Filters = () => {
       {/* Filter By Particular Dish */}
       {filterButtons.map((elem) => (
         <button
-          onClick={() => handleFilter(elem.value)}
+          onClick={() => {
+            setFilterText(elem.value);
+            setPageNo(1);
+          }}
           key={elem.id}
           className="btn btn-default"
           style={{ width: '7rem', height: '6rem' }}
