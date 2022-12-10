@@ -18,7 +18,13 @@
    <li>Node.js</li>
    <li>Express</li>
   </ul>
-
+# Features
+<ol>
+<li>Various method to sort dishes on our Food page</li>
+<li>All Pages Responsive for Mobile Tablet and Screen </li>
+<li>Indicators - Loading, success & error</li>
+<li>Adding Goodle Reviews also user can write review</>
+</ol>
 ## License
 
 [MIT License](LICENCE)
