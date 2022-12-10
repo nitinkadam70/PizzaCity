@@ -30,9 +30,8 @@ export const getDishes = (payload) => (dispatch) => {
     .then((res) => {
       dispatch(getDishSuccess(res));
 
-      console.log(Math.ceil(res.headers['x-total-count'] / 4));
+      //console.log(Math.ceil(res.headers['x-total-count'] / 4));
       //last page
     })
     .catch((err) => dispatch(getDishError()));
 };
-

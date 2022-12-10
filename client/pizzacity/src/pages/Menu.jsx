@@ -122,7 +122,9 @@ const Menu = () => {
             ></div>
           ) : (
             dishes?.data &&
-            dishes.data.map((item) => <DishCard item={item} />)
+            dishes.data.map((item) => (
+              <DishCard key={item.id} item={item} />
+            ))
           )}
         </div>
       </section>

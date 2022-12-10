@@ -7,6 +7,7 @@ const Orders = () => {
     return;
   }
   return (
+    //page is under constructions
     <div>
       {/* Admin Page */}
       Orders

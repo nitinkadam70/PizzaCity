@@ -59,11 +59,11 @@ const Filters = ({
       {/* Filter By Particular Dish */}
       {filterButtons.map((elem) => (
         <button
+          key={elem.id}
           onClick={() => {
             setFilterText(elem.value);
             setPageNo(1);
           }}
-          key={elem.id}
           className="btn btn-default"
           style={{ width: '7rem', height: '6rem' }}
         >
