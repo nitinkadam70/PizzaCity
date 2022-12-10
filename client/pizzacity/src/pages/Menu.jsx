@@ -53,10 +53,11 @@ const Menu = () => {
   const handleSearch = (e) => {
     e.preventDefault();
     const params = { q: searchText };
-    {
-      searchText
-        ? dispatch(getDishes(params))
-        : toast('Please Enter Cafe Food To Search');
+    if (searchText) {
+      dispatch(getDishes(params));
+      setPageNo(1);
+    } else {
+      toast('Please Enter Cafe Food To Search');
     }
   };
 
