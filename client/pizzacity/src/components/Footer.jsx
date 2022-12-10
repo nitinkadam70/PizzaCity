@@ -63,9 +63,9 @@ export default function Footer() {
         © 2022 Copyright :
         <a
           className="text-white text-decoration-none"
-          href="https://pizzacitypbn.com/"
+          href="https://pizzacity.vercel.app/"
         >
-          <em>{' ' + 'pizzacitypbn.com'}</em>
+          <em>{' ' + 'pizzacity.vercel.app'}</em>
         </a>
         <p>
         Developed by Nitin Kadam{' '}
