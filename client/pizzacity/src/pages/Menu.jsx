@@ -49,6 +49,7 @@ const Menu = () => {
     filterText,
   ]);
 
+  //HandelSearch for searching Particular Item text
   const handleSearch = (e) => {
     e.preventDefault();
     const params = { q: searchText };
@@ -71,8 +72,9 @@ const Menu = () => {
             setPageNo={setPageNo}
           />
         </div>
-        {/* sorting */}
+        {/* sorting and pagination */}
         <div className="d-flex align-items-center justify-content-around mt-4">
+          {/* sorting */}
           <select
             className="form-select w-25"
             onChange={(e) => setSortValue(e.target.value)}
@@ -81,6 +83,7 @@ const Menu = () => {
             <option value="ASC">Price: Low to High</option>
             <option value="DESC">Price: High to Low</option>
           </select>
+          {/* pagination */}
           <div className="d-flex align-items-center justify-content-around gap-4">
             <button
               disabled={pageNo === 1}
@@ -109,7 +112,7 @@ const Menu = () => {
             </button>
           </div>
         </div>
-        {/* Data */}
+        {/* Data and handling loading and errors here*/}
         <div className="card-grid p-5">
           {error && <Error />}
           {loading ? (

@@ -5,6 +5,7 @@
   --text-secondary: #cdcdcd;
 }
 
+/* Global CSS */
 * {
   margin: 0;
   padding: 0;
@@ -24,10 +25,23 @@ body::before {
   content: '';
   height: 70px;
 }
+
+body {
+  overflow-y: scroll;
+}
+
+/* NavbarCSS */
+.nav-link:hover {
+  color: orange !important;
+}
+
+/* Footer CSS */
 .hover-class:hover {
   background-color: white;
   color: #202124;
 }
+
+/* Card CSS */
 .card-grid {
   width: 80%;
   margin: auto;
@@ -37,25 +51,17 @@ body::before {
   align-items: center;
   gap: 25px;
 }
-.nav-link:hover {
-  color: orange !important;
-}
 
 .card-hover {
   transition: transform 0.8s;
   cursor: pointer;
 }
+
 .card-hover:hover {
   border: 5px solid orange;
   transform: scale(1.04);
 }
-/* Menu page filter Navabar styles
-.mini-nav-filter {
-  width: 100%;
-  position: sticky !important;
-  z-index: 5000 !important;
-  top: 0;
-} */
+
 @media only screen and (max-width: 1000px) {
   .card-grid {
     grid-template-columns: repeat(3, auto);
@@ -71,7 +77,4 @@ body::before {
   .card-grid {
     grid-template-columns: repeat(1, auto);
   }
-}
-body {
-  overflow-y: scroll;
 }

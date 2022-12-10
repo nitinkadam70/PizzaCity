@@ -6,9 +6,12 @@ import ownerimg from '../images/ownerimg.jpg';
 const AboutUs = () => {
   return (
     <div className="container">
+      {/* Heading */}
       <h1 className="text-center m-5">
         <strong>About US</strong>
       </h1>
+
+      {/* ShowCase founder and para */}
       <div className="d-lg-flex w-100 m-auto p-5 gap-5">
         <div>
           <p
@@ -43,6 +46,8 @@ const AboutUs = () => {
           />
         </div>
       </div>
+
+      {/* Cafe IMages */}
       <div className="d-lg-flex flex-md-column flex-lg-row flex-sm-column align-items-center justify-content-between gap-2 m-5">
         <div>
           <h2>Outside View</h2>
