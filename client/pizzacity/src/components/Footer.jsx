@@ -68,7 +68,7 @@ export default function Footer() {
           <em>{' ' + 'pizzacitypbn.com'}</em>
         </a>
         <p>
-          Build by <span>Nitin Kadam</span>{' '}
+        Developed by Nitin Kadam{' '}
           <span>
             <a href="tel:+917249597070">
               <SlCallIn size={'20px'} className="m-2" />
