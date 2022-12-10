@@ -38,7 +38,7 @@ const Navbar = () => {
 
         {/* Navlinks */}
         <div className="collapse navbar-collapse" id="navmenu">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto ">
             <li className="nav-item">
               <NavLink to={'/menu'} className="nav-link">
                 <span>
