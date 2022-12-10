@@ -5,19 +5,33 @@ import { FaFacebook } from 'react-icons/fa';
 import { BsInstagram } from 'react-icons/bs';
 import { AiFillTwitterCircle } from 'react-icons/ai';
 import { SiGmail } from 'react-icons/si';
+import { SlCallIn } from 'react-icons/sl';
+import { CgMail } from 'react-icons/cg';
 
 export default function Footer() {
   return (
     <MDBFooter className="bg-dark text-center text-white w-100">
       {/* Social Meadia Icons */}
       <section className="mb-4 pt-4 d-flex gap-4 align-items-center justify-content-center">
-        <div className="border rounded p-2 hover-class">
+        <div
+          className="border rounded p-2 hover-class"
+          onClick={() =>
+            (window.location.href =
+              'https://www.facebook.com/people/%E0%A4%AA%E0%A4%BF%E0%A4%9D%E0%A5%8D%E0%A4%9D%E0%A4%BE-%E0%A4%B8%E0%A4%BF%E0%A4%9F%E0%A5%80/100045314523636/')
+          }
+        >
           <FaFacebook size={'20px'} />
         </div>
         <div className="border rounded p-2 hover-class">
           <AiFillTwitterCircle size={'20px'} />
         </div>
-        <div className="border rounded p-2 hover-class">
+        <div
+          className="border rounded p-2 hover-class"
+          onClick={() =>
+            (window.location.href =
+              'https://www.instagram.com/invites/contact/?i=18u01cgz910fw&utm_content=q68skao')
+          }
+        >
           <BsInstagram size={'20px'} />
         </div>
         <div
@@ -53,6 +67,19 @@ export default function Footer() {
         >
           <em>{' ' + 'pizzacitypbn.com'}</em>
         </a>
+        <p>
+          Build by <span>Nitin Kadam</span>{' '}
+          <span>
+            <a href="tel:+917249597070">
+              <SlCallIn size={'20px'} className="m-2" />
+            </a>
+          </span>
+          <span>
+            <a href="mailto:nitinakadam1999@gmail.com">
+              <SiGmail size={'20px'} className="m-2" color="red" />
+            </a>
+          </span>
+        </p>
       </div>
     </MDBFooter>
   );
