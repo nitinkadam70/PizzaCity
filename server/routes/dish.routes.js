@@ -2,7 +2,7 @@ const { Router } = require('express');
 const {
   getDishes,
   createDish,
-  editDish,
+  updateDish,
   deleteDish,
 } = require('../controllers/dish.controller');
 
@@ -14,10 +14,10 @@ dishRouter.get('/allDishes', getDishes);
 //post dish
 dishRouter.post('/createDish', createDish);
 
-//Edit dish
-dishRouter.patch('/editDish', editDish);
+//update dish
+dishRouter.patch('/updateDish/:id', updateDish);
 
 //Delete dish
-dishRouter.delete('/deleteDish', deleteDish);
+dishRouter.delete('/deleteDish/:id', deleteDish);
 
-module.exports = { dishRouter };
+module.exports = dishRouter;
