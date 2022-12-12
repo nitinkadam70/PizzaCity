@@ -1,27 +1,31 @@
 const express = require('express'); //Library
-const fs = require('fs');
-const { parse } = require('querystring');
 const cors = require('cors');
+const connection = require('./config/db');
+const dishRouter = require('./routes/dish.routes');
+require('dotenv').config();
 
 const app = express(); //Server
 
+app.use(cors());
 app.use(express.json()); //middlewares
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
 
+app.use('/dish', dishRouter);
 //Read Data or Get Data
 app.get('/', (req, res) => {
-  fs.readFile('./db.json', { encoding: 'utf-8' }, (err, data) => {
-    res.setHeader('Content-type', 'application/json');
-    //if we wanna send json data then just res.json(JSON.parse(data))
-    res.send(data);
-  });
+  res.send({ status: 'success', msg: 'Welcome to Homepage' });
 });
 
 app.all('*', (req, res) => {
   res.status(404).send('Not Found');
 });
-app.listen(8080, () => {
+
+app.listen(8080, async () => {
+  try {
+    await connection;
+    console.log('Connected to MongoDB');
+  } catch (e) {
+    console.log('ERROR: ' + e);
+  }
   console.log('server started on http://localhost:8080');
 });
-
