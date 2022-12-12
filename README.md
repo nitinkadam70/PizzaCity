@@ -15,15 +15,29 @@
    <li>Node.js</li>
    <li>Express</li>
   </ul>
-# Features
+  
+## Features
 <ol>
 <li>Various method to sort dishes or filter dishes on our Food page</li>
-<li>All Pages Responsive for Mobile, Tablet, and Screen </li>
+<li>All Pages Responsive for Mobile, Tablet, and Screen view</li>
 <li>Indicators - Loading, success & error</li>
 <li>Adding google Reviews also user can write review</>
 <li>Pagination</>
 <li>Responsive navbar and footer also</li>
 </ol>
+
+## Homepage
+![image](https://user-images.githubusercontent.com/99539536/207023165-e4e3e236-c5b2-4fb3-a031-c8ea6dc5cef9.png)
+
+## Our Food Page
+![image](https://user-images.githubusercontent.com/99539536/207023498-28c32429-bfe3-411e-95ff-a4f3d94335f3.png)
+
+## Google Reviews Page
+![image](https://user-images.githubusercontent.com/99539536/207023318-54926fc2-8b67-45b5-ae82-e82321cfd6d2.png)
+
+## About Us
+![image](https://user-images.githubusercontent.com/99539536/207023631-3737ec31-371b-41cf-8fcf-11d99e221315.png)
+
 ## License
 
 [MIT License](LICENCE)
