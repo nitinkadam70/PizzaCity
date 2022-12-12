@@ -17,7 +17,7 @@ ReactGA.initialize(TRACKING_ID);
 function App() {
   useEffect(() => {
     //Non interaction event Google Analytcics
-    ReactGA.pageview.(window.location.pathname);
+    ReactGA.pageview(window.location.pathname);
   }, []);
   return (
     <>
