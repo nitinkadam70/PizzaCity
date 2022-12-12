@@ -26,7 +26,7 @@ const filterButtons = [
   {
     id: 4,
     imgLink:
-      'https://lh3.googleusercontent.com/KpS2135g8Tgr7ZKirm9f7LNmXw1WW_ioNvmRhYJJTtUsfaQoTq3jtKhhhJCBu8S3bmvk3wfut-f3h4WWDALqGLI=s1200-e365',
+      'https://user-images.githubusercontent.com/99539536/207026645-34219b68-6b41-401c-963b-f7d2f8388622.png',
     value: 'Drinks',
   },
   {
