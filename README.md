@@ -21,6 +21,7 @@
 <li>All Pages Responsive for Mobile, Tablet, and Screen </li>
 <li>Indicators - Loading, success & error</li>
 <li>Adding google Reviews also user can write review</>
+<li>Pagination</>
 <li>Responsive navbar and footer also</li>
 </ol>
 ## License
