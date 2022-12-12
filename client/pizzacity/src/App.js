@@ -8,12 +8,17 @@ import Offers from './pages/Offers';
 import Error from './components/Error';
 import Reviews from './pages/Reviews';
 import ReactGA from 'react-ga';
+import { useEffect } from 'react';
 
 //adding google Analytics to project
 const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
+  useEffect(() => {
+    //Non interaction event Google Analytcics
+    ReactGA.pageview.pathname;
+  }, []);
   return (
     <>
       <Navbar />
