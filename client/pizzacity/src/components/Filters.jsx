@@ -26,7 +26,7 @@ const filterButtons = [
   {
     id: 4,
     imgLink:
-      'https://img.freepik.com/premium-vector/cocktails-logo-inspiration-drink-glass-bar-restaurant_63578-164.jpg?w=2000',
+      'https://logodix.com/logo/2051721.jpg',
     value: 'Drinks',
   },
   {
