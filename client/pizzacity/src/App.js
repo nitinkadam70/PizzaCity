@@ -7,6 +7,12 @@ import Menu from './pages/Menu';
 import Offers from './pages/Offers';
 import Error from './components/Error';
 import Reviews from './pages/Reviews';
+import ReactGA from 'react-ga';
+
+//adding google Analytics to project
+const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
   return (
     <>
