@@ -26,7 +26,7 @@ const filterButtons = [
   {
     id: 4,
     imgLink:
-      'https://logodix.com/logo/2051721.jpg',
+      'https://lh3.googleusercontent.com/KpS2135g8Tgr7ZKirm9f7LNmXw1WW_ioNvmRhYJJTtUsfaQoTq3jtKhhhJCBu8S3bmvk3wfut-f3h4WWDALqGLI=s1200-e365',
     value: 'Drinks',
   },
   {
