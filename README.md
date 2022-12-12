@@ -1,8 +1,5 @@
-<div align="center">
-<img src="https://user-images.githubusercontent.com/99539536/206841802-698ab42a-bbba-49e5-9c66-d6bc52b7310a.gif" alt="logo"/>
-</div>
-
 ## Pizza City
+- It's my first project as freelancer so my clients want to create his cafe's website their user can get overview of our cafe or know more about us, so I'm created the web app that's fulfilling clients' requirements
 
 ## Tech Stack
 
@@ -20,10 +17,11 @@
   </ul>
 # Features
 <ol>
-<li>Various method to sort dishes on our Food page</li>
-<li>All Pages Responsive for Mobile Tablet and Screen </li>
+<li>Various method to sort dishes or filter dishes on our Food page</li>
+<li>All Pages Responsive for Mobile, Tablet, and Screen </li>
 <li>Indicators - Loading, success & error</li>
-<li>Adding Goodle Reviews also user can write review</>
+<li>Adding google Reviews also user can write review</>
+<li>Responsive navbar and footer also</li>
 </ol>
 ## License
 
