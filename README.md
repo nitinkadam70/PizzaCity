@@ -14,6 +14,7 @@
    <li>Bootstrap</li>
    <li>Node.js</li>
    <li>Express</li>
+   <li>MongoDb as Database</li>
   </ul>
   
 ## Features
