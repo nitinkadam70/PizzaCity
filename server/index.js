@@ -20,12 +20,14 @@ app.all('*', (req, res) => {
   res.status(404).send('Not Found');
 });
 
-app.listen(8080, async () => {
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, async () => {
   try {
     await connection;
     console.log('Connected to MongoDB');
   } catch (e) {
     console.log('ERROR: ' + e);
   }
-  console.log('server started on http://localhost:8080');
+  console.log(`server started on http://localhost:${PORT}`);
 });
