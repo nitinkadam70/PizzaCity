@@ -29,7 +29,7 @@ const Navbar = () => {
           />
         </NavLink>
 
-        {/* Toggle Button */}
+        {/* Toggle Button toggler */}
         <button
           className="navbar-toggler"
           type="button"
