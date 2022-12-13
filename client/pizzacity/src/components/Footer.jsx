@@ -61,11 +61,8 @@ export default function Footer() {
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
       >
         © 2022 Copyright :
-        <a
-          className="text-white text-decoration-none"
-          href="https://thepizzacity.com"
-        >
-          <em>{' ' + 'thepizzacity.com'}</em>
+        <a className="text-white" href="https://thepizzacity.com">
+          {' ' + 'thepizzacity.com'}
         </a>
         <p>
           Developed by Nitin Kadam{' '}

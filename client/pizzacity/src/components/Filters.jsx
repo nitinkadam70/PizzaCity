@@ -4,6 +4,8 @@ import { BiPhoneCall } from 'react-icons/bi';
 import { useDispatch } from 'react-redux';
 import { getDishes } from '../redux/action';
 import { GiFullPizza } from 'react-icons/gi';
+import sandwitch from '../images/sandwitch.png';
+
 const filterButtons = [
   {
     id: 1,
@@ -19,8 +21,7 @@ const filterButtons = [
   },
   {
     id: 3,
-    imgLink:
-      'https://freepngimg.com/save/512-sandwich-png-image/3485x1984',
+    imgLink: sandwitch,
     value: 'sandwich',
   },
   {
