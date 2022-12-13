@@ -12,6 +12,7 @@ const getDishes = async (req, res) => {
   }
 };
 
+//adding Dishes
 const createDish = async (req, res) => {
   try {
     let dish = await new DishModel(req.body);
@@ -33,7 +34,26 @@ const createDish = async (req, res) => {
       .json({ type: 'error', message: 'Internal Error Occured' });
   }
 };
-const updateDish = () => {};
+
+//updating Dishes
+const updateDish = async (req, res) => {
+  try {
+    const _id = req.params.id;
+    const update_Dish = await DishModel.findByIdAndUpdate(
+      _id,
+      req.body
+    );
+    await update_Dish.save();
+    return res.send({
+      type: 'success',
+      message: 'Dish updated successfully!',
+    });
+  } catch (error) {
+    return res
+      .status(500)
+      .json({ type: 'error', message: 'Internal Error Occured' });
+  }
+};
 const deleteDish = () => {};
 
 module.exports = { getDishes, createDish, updateDish, deleteDish };
