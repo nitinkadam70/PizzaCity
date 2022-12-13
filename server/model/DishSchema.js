@@ -7,6 +7,7 @@ const dishSchema = mongoose.Schema({
   description: { type: String },
   img: { type: String, require: true },
   type: { type: String, require: true },
+  id: { type: Number },
 });
 
 const DishModel = mongoose.model('dish', dishSchema);
