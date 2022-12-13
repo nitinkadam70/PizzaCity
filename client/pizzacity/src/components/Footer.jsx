@@ -63,12 +63,12 @@ export default function Footer() {
         © 2022 Copyright :
         <a
           className="text-white text-decoration-none"
-          href="https://pizzacity.vercel.app/"
+          href="https://thepizzacity.com"
         >
-          <em>{' ' + 'pizzacity.vercel.app'}</em>
+          <em>{' ' + 'thepizzacity.com'}</em>
         </a>
         <p>
-        Developed by Nitin Kadam{' '}
+          Developed by Nitin Kadam{' '}
           <span>
             <a href="tel:+917249597070">
               <SlCallIn size={'20px'} className="m-2" />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo3 from '../images/logo3.gif';
+import logo3 from '../images/logo3.png';
 import {
   MdFastfood,
   MdOutlineLocalOffer,
@@ -11,16 +11,19 @@ import { GiFullPizza } from 'react-icons/gi';
 const Navbar = () => {
   return (
     //Main Navbar
-    <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-2.5 fixed-top">
+    <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-1 fixed-top">
       <div className="container">
         {/* Logo */}
         <NavLink to={'/'} className="navbar-brand bb-animate">
           <img
             style={{
               overflow: 'hidden',
-              width: '142px',
+              width: '100px',
+              height: '52px',
               display: 'inline-block',
+              border: '1px solid white',
             }}
+            className="px-2 bg-danger rounded"
             src={logo3}
             alt=""
           />
