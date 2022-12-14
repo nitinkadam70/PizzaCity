@@ -55,7 +55,13 @@ const Filters = ({
         <span>
           <BiPhoneCall size={'31px'} color={'green'} />
         </span>{' '}
-        Ping for Order +919518318549
+        Ping for Order{' '}
+        <span
+          className="btn btn-md  btn-outline-success"
+          onClick={() => (window.location.href = 'tel:+919518318549')}
+        >
+          +919518318549
+        </span>
       </h5>
 
       {/* Filter By Particular Dish */}

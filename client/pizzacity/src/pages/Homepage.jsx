@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { MdRestaurantMenu } from 'react-icons/md';
 const Homepage = () => {
   const navigate = useNavigate();
   return (
@@ -18,14 +18,26 @@ const Homepage = () => {
                 Spreading yummy smiles with deep intense love and
                 happiness
               </p>
-              <button
-                onClick={() =>
-                  (window.location.href = 'tel:+919518318549')
-                }
-                className="btn btn-primary btn-lg"
-              >
-                Simply call on +919518318549
-              </button>
+              <div className="d-flex gap-2">
+                <button
+                  onClick={() =>
+                    (window.location.href = 'tel:+919518318549')
+                  }
+                  className="btn btn-primary btn-sm"
+                >
+                  Simply call on +919518318549
+                </button>
+
+                <button
+                  onClick={() => navigate('/menu')}
+                  className="btn btn-warning btn-sm"
+                >
+                  <span>
+                    <MdRestaurantMenu size={'20px'} />
+                  </span>{' '}
+                  our Menu
+                </button>
+              </div>
             </div>
             <img
               className="border border-light img-fluid w-50 d-none d-sm-block"
