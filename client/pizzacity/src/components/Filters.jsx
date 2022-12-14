@@ -5,12 +5,12 @@ import { useDispatch } from 'react-redux';
 import { getDishes } from '../redux/action';
 import { GiFullPizza } from 'react-icons/gi';
 import sandwitch from '../images/sandwitch.png';
+import pizzalogo from '../images/pizzalogo.jpg';
 
 const filterButtons = [
   {
     id: 1,
-    imgLink:
-      'https://i.pinimg.com/originals/38/49/c7/3849c7b63abaa8d7bee746cea021eee5.jpg',
+    imgLink: pizzalogo,
     value: 'Pizza',
   },
   {
