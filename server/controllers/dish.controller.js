@@ -2,8 +2,12 @@ const DishModel = require('../model/DishSchema');
 
 //getting Dishes
 const getDishes = async (req, res) => {
+  const { pageNo, perPage } = req.query;
+
   try {
-    let dishes = await DishModel.find();
+    let dishes = await DishModel.find()
+      .skip((pageNo - 1) * perPage)
+      .limit(perPage);
     return res.status(200).send({ type: 'success', data: dishes });
   } catch (e) {
     return res
