@@ -37,6 +37,7 @@ const filterButtons = [
     value: 'Snacks',
   },
 ];
+
 const Filters = ({
   setFilterText,
   setSearchText,

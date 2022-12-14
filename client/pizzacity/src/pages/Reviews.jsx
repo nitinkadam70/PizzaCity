@@ -12,17 +12,22 @@ const Reviews = () => {
   }, [loading]);
 
   return (
-    <div className="container" style={{ height: '60vh' }}>
-      {loading && (
-        <center className="mt-2">
-          <div
-            className="spinner-border text-dark"
-            role="status"
-          ></div>
-        </center>
-      )}
-      <div className="elfsight-app-dd2517ea-70a0-4151-beb8-2d4aefe6ed85 mt-5"></div>
-    </div>
+    <>
+      <div className="container" style={{ height: '60vh' }}>
+        {loading && (
+          <center className="mt-2">
+            <div
+              className="spinner-border text-dark"
+              role="status"
+            ></div>
+          </center>
+        )}
+        <div className="elfsight-app-dd2517ea-70a0-4151-beb8-2d4aefe6ed85 mt-5"></div>
+      </div>
+      <br />
+      <br />
+      <br />
+    </>
   );
 };
 
