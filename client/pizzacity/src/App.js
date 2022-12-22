@@ -9,6 +9,7 @@ import Error from './components/Error';
 import Reviews from './pages/Reviews';
 import ReactGA from 'react-ga';
 import { useEffect } from 'react';
+import GoToTop from './components/GoToTop';
 
 //adding google Analytics to project
 const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
@@ -30,6 +31,7 @@ function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <GoToTop />
       <Footer />
     </>
   );
