@@ -1,12 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
 import { BiPhoneCall } from 'react-icons/bi';
-import { useDispatch } from 'react-redux';
-import { getDishes } from '../redux/action';
-import { GiFullPizza } from 'react-icons/gi';
 import sandwitch from '../images/sandwitch.png';
 import pizzalogo from '../images/pizzalogo.jpg';
-
+import burgerlogo from '../images/burger.jpg';
+import mocktailslogo from '../images/mocktailslogo.jpg';
+import snaackslogo from '../images/snaacks.png';
 const filterButtons = [
   {
     id: 1,
@@ -15,8 +13,7 @@ const filterButtons = [
   },
   {
     id: 2,
-    imgLink:
-      'https://media.istockphoto.com/id/1356778093/vector/delicious-burger-flat-logo-icon-sticker-vector.jpg?s=612x612&w=0&k=20&c=KhrQagy_iVz9nzWLZ_EIy9-zIkVexVhqbpZSbKfFRuI=',
+    imgLink: burgerlogo,
     value: 'Burger',
   },
   {
@@ -26,14 +23,12 @@ const filterButtons = [
   },
   {
     id: 4,
-    imgLink:
-      'https://lh3.googleusercontent.com/KpS2135g8Tgr7ZKirm9f7LNmXw1WW_ioNvmRhYJJTtUsfaQoTq3jtKhhhJCBu8S3bmvk3wfut-f3h4WWDALqGLI=s1200-e365',
+    imgLink: mocktailslogo,
     value: 'Drinks',
   },
   {
     id: 5,
-    imgLink:
-      'https://img.freepik.com/premium-vector/snacks-logo-design_642489-18.jpg?w=2000',
+    imgLink: snaackslogo,
     value: 'Snacks',
   },
 ];

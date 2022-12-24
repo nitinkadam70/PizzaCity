@@ -1,6 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MdRestaurantMenu } from 'react-icons/md';
+import cofeeGiphy from '../images/cofeeGiphy.webp';
+import pizzaGiphy from '../images/pizzaGiphy.webp';
+import pizzaShowcase from '../images/pizzaShowcase.jpg';
+import zomatoBike from '../images/zomatoBike.jpg';
 const Homepage = () => {
   const navigate = useNavigate();
   return (
@@ -41,8 +45,8 @@ const Homepage = () => {
             </div>
             <img
               className="border border-light img-fluid w-50 d-none d-sm-block"
-              src="https://images5.alphacoders.com/101/thumb-1920-1013630.jpg"
-              alt=""
+              src={pizzaShowcase}
+              alt="pizzaShowcase"
             />
           </div>
         </div>
@@ -51,17 +55,9 @@ const Homepage = () => {
       {/* GIF Foods */}
       <section className="bg-warning pb-5 text-center">
         <div className="d-lg-flex flex-md-column flex-lg-row flex-sm-column align-items-center justify-content-between w-100">
-          <img
-            className="w-100"
-            src="https://media0.giphy.com/media/9KCNcFVQmZhRK/giphy.gif?cid=ecf05e47gqjqjrroooe3crxwm7oaav25uwavxndewhju7zeg&rid=giphy.gif&ct=g"
-            alt=""
-          />
+          <img className="w-100" src={pizzaGiphy} alt="pizzaGiphy" />
 
-          <img
-            className="w-100"
-            src="https://media4.giphy.com/media/CqtG4f5UF9G5q/giphy.gif?cid=ecf05e47d5lumlox4wu2176xjbee9kxm8qjg46qk4zug4dtp&rid=giphy.gif&ct=g"
-            alt=""
-          />
+          <img className="w-100" src={cofeeGiphy} alt="cofeeGiphy" />
         </div>
       </section>
 
@@ -91,8 +87,8 @@ const Homepage = () => {
             </div>
             <img
               className="bg-light img-fluid w-50"
-              src="https://techstory.in/wp-content/uploads/2021/07/SEBI-grants-approval-to-Zomatos-blockbuster-IPO.jpg"
-              alt=""
+              src={zomatoBike}
+              alt="zomatoBike"
             />
           </div>
         </div>

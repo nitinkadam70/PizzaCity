@@ -7,7 +7,7 @@ import {
   MdRateReview,
 } from 'react-icons/md';
 import { FcAbout } from 'react-icons/fc';
-import { GiFullPizza } from 'react-icons/gi';
+import { RiAdminLine } from 'react-icons/ri';
 const Navbar = () => {
   return (
     //Main Navbar
@@ -25,7 +25,7 @@ const Navbar = () => {
             }}
             className="px-2 bg-danger rounded"
             src={logo3}
-            alt=""
+            alt="logo"
           />
         </NavLink>
 
@@ -73,6 +73,14 @@ const Navbar = () => {
                   <FcAbout size={'20px'} />{' '}
                 </span>
                 About us
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to={'/adminauth'} className="nav-link">
+                <span>
+                  <RiAdminLine size={'20px'} />{' '}
+                </span>
+                Admin
               </NavLink>
             </li>
           </ul>
