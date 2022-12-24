@@ -12,7 +12,7 @@ const AdminAuth = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(admindata);
+    //console.log(admindata);
     setAdminData('');
   };
   return (
@@ -66,7 +66,6 @@ const AdminAuth = () => {
                             name="email"
                             onChange={handleChange}
                             type="email"
-                            id="form2Example17"
                             className="form-control form-control-lg"
                           />
                         </div>
@@ -79,7 +78,6 @@ const AdminAuth = () => {
                             required
                             name="password"
                             type="password"
-                            id="form2Example27"
                             className="form-control form-control-lg"
                           />
                         </div>
