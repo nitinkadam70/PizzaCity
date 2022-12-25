@@ -1,14 +1,38 @@
 const DishModel = require('../model/DishSchema');
 
+
 //getting Dishes
 const getDishes = async (req, res) => {
-  const { pageNo, perPage } = req.query;
+  const page = req.query._page || 1;
+  const limit = req.query._limit || 10;
+  const sortField = req.query._sort;
+  const sortOrder = req.query._order === 'asc' ? 1 : -1;
+  const filter = req.query.type;
+  const search = req.query.q;
 
   try {
-    let dishes = await DishModel.find()
-      .skip((pageNo - 1) * perPage)
-      .limit(perPage);
-    return res.status(200).send({ type: 'success', data: dishes });
+    //filter
+    const query = {};
+    if (filter) {
+      query.type = filter;
+    }
+    if (search) {
+      query.$text = { $search: search };
+    }
+    console.log(query);
+
+    let dishes = await DishModel.find(query)
+      .sort({ [sortField]: sortOrder })
+      .skip((page - 1) * limit)
+      .limit(limit)
+      .exec((err, items) => {
+        if (err) {
+          return res.status(500).send(err);
+        }
+        return res.status(200).send({ type: 'success', data: items });
+      });
+
+    //return res.status(200).send({ type: 'success', data: dishes });
   } catch (e) {
     return res
       .status(500)
@@ -61,12 +85,9 @@ const updateDish = async (req, res) => {
 
 //Delete Dish
 const deleteDish = async (req, res) => {
+  const _id = req.params.id;
   try {
-    const _id = req.params.id;
-    const delete_Dish = await DishModel.findByIdAndUpdate(_id, {
-      delete: true,
-    });
-    await delete_Dish.save();
+    const delete_Dish = await DishModel.deleteOne(_id, {});
     return res.send({
       type: 'success',
       message: 'Dish deleted successfully!',

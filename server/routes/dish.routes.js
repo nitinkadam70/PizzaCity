@@ -6,18 +6,20 @@ const {
   deleteDish,
 } = require('../controllers/dish.controller');
 
+const requireAuth = require('../middlewares/requireAuth.middleware');
+
 const dishRouter = Router();
 
 //Getting All dishes
 dishRouter.get('/allDishes', getDishes);
 
 //post dish
-dishRouter.post('/createDish', createDish);
+dishRouter.post('/createDish', requireAuth, createDish);
 
 //update dish
-dishRouter.patch('/updateDish/:id', updateDish);
+dishRouter.patch('/updateDish/:id', requireAuth, updateDish);
 
 //Delete dish
-dishRouter.delete('/deleteDish/:id', deleteDish);
+dishRouter.delete('/deleteDish/:id', requireAuth, deleteDish);
 
 module.exports = dishRouter;
