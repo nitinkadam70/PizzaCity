@@ -5,7 +5,6 @@ import cofeeGiphy from '../images/cofeeGiphy.webp';
 import pizzaGiphy from '../images/pizzaGiphy.webp';
 import pizzaShowcase from '../images/pizzaShowcase.jpg';
 import zomatoBike from '../images/zomatoBike.jpg';
-import { AiOutlineFieldTime } from 'react-icons/ai';
 const Homepage = () => {
   const navigate = useNavigate();
   return (
