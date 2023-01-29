@@ -75,14 +75,6 @@ const Navbar = () => {
                 About us
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink to={'/adminauth'} className="nav-link">
-                <span>
-                  <RiAdminLine size={'20px'} />{' '}
-                </span>
-                Admin
-              </NavLink>
-            </li>
           </ul>
         </div>
       </div>

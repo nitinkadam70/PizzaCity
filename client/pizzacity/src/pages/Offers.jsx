@@ -8,7 +8,8 @@ const Offers = () => {
     <div className="w-50 m-auto">
       <img
         src={offer1}
-        className="w-100 d-block"
+        style={{ width: '100%' }}
+        className="d-block"
         alt="offerOne"
       />
     </div>
