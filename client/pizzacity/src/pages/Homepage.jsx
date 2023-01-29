@@ -5,6 +5,7 @@ import cofeeGiphy from '../images/cofeeGiphy.webp';
 import pizzaGiphy from '../images/pizzaGiphy.webp';
 import pizzaShowcase from '../images/pizzaShowcase.jpg';
 import zomatoBike from '../images/zomatoBike.jpg';
+import { AiOutlineFieldTime } from 'react-icons/ai';
 const Homepage = () => {
   const navigate = useNavigate();
   return (
@@ -44,9 +45,10 @@ const Homepage = () => {
               </div>
             </div>
             <img
-              className="border border-light img-fluid w-50 d-none d-sm-block"
+              className="border border-light img-fluid d-none d-sm-block"
               src={pizzaShowcase}
               alt="pizzaShowcase"
+              style={{ width: '50%' }}
             />
           </div>
         </div>
@@ -55,9 +57,17 @@ const Homepage = () => {
       {/* GIF Foods */}
       <section className="bg-warning pb-5 text-center">
         <div className="d-lg-flex flex-md-column flex-lg-row flex-sm-column align-items-center justify-content-between w-100">
-          <img className="w-100" src={pizzaGiphy} alt="pizzaGiphy" />
+          <img
+            style={{ width: '100%' }}
+            src={pizzaGiphy}
+            alt="pizzaGiphy"
+          />
 
-          <img className="w-100" src={cofeeGiphy} alt="cofeeGiphy" />
+          <img
+            style={{ width: '100%' }}
+            src={cofeeGiphy}
+            alt="cofeeGiphy"
+          />
         </div>
       </section>
 
@@ -86,11 +96,22 @@ const Homepage = () => {
               </button>
             </div>
             <img
-              className="bg-light img-fluid w-50"
+              className="bg-light img-fluid animateImg"
+              style={{ width: '50%' }}
               src={zomatoBike}
               alt="zomatoBike"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Availability */}
+      <section className="bg-light text-dark p-5 p-lg-0 pt-lg-5 pb-lg-5 text-center text-sm-start">
+        <div className="container">
+          <h1 className="text-center">Opening | Hours</h1>
+          <p className="text-center pt-2 text-md">
+            We're Here For You Everyday | 10am - 11pm
+          </p>
         </div>
       </section>
     </>

@@ -35,7 +35,7 @@ const GoToTop = () => {
           style={{ bottom: '3rem' }}
         >
           <button
-            className="btn btn-primary btn-md rounded-circle"
+            className="btn btn-primary btn-md rounded-circle border border-info tilledAnimation"
             onClick={goToTopHandler}
           >
             <FaArrowUp />

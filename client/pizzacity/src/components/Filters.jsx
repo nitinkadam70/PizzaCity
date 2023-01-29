@@ -67,7 +67,7 @@ const Filters = ({
             setFilterText(elem.value);
             setPageNo(1);
           }}
-          className="btn btn-default"
+          className="btn btn-default shrinkAnimation"
           style={{ width: '7rem', height: '6rem' }}
         >
           <img
