@@ -110,7 +110,6 @@ const Homepage = () => {
 
       {/* Availability */}
       <section
-        data-aos="fade-up"
         className="bg-light text-dark p-5 p-lg-0 pt-lg-5 pb-lg-5 text-center text-sm-start"
       >
         <div className="container">
