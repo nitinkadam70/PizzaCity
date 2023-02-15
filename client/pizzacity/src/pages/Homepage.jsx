@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { MdRestaurantMenu } from 'react-icons/md';
 import cofeeGiphy from '../images/cofeeGiphy.webp';
 import pizzaGiphy from '../images/pizzaGiphy.webp';
 import pizzaShowcase from '../images/pizzaShowcase.jpg';
 import zomatoBike from '../images/zomatoBike.jpg';
+import AOS from 'aos';
 const Homepage = () => {
   const navigate = useNavigate();
+
   return (
     <>
       {/* ShowCase */}
       <section className="bg-dark text-light p-5 p-lg-0 pt-lg-5 pb-lg-5 pt-md-5 text-center text-sm-start">
         <div className="container">
           <div className="d-sm-flex align-items-center justify-content-between">
-            <div>
+            <div data-aos="fade-right">
               <h1>
                 Order Your{' '}
                 <span className="text-warning"> Favorite Food </span>
@@ -44,6 +46,7 @@ const Homepage = () => {
               </div>
             </div>
             <img
+              data-aos="fade-left"
               className="border border-light img-fluid d-none d-sm-block"
               src={pizzaShowcase}
               alt="pizzaShowcase"
@@ -74,7 +77,7 @@ const Homepage = () => {
       <section className="bg-image text-dark p-5 p-lg-0 pt-lg-5 pb-lg-5 text-center text-sm-start">
         <div className="container">
           <div className="d-lg-flex d-md-flex d-md-row flex-lg-row flex-sm-column align-items-center justify-content-between">
-            <div>
+            <div data-aos="fade-right">
               <h1 className="lh-lg">
                 {'Also Order Form' + ' '}
                 <span className="text-light bg-danger p-2 rounded mt-2">
@@ -95,6 +98,7 @@ const Homepage = () => {
               </button>
             </div>
             <img
+              data-aos="fade-left"
               className="bg-light img-fluid animateImg"
               style={{ width: '50%' }}
               src={zomatoBike}
@@ -105,7 +109,10 @@ const Homepage = () => {
       </section>
 
       {/* Availability */}
-      <section className="bg-light text-dark p-5 p-lg-0 pt-lg-5 pb-lg-5 text-center text-sm-start">
+      <section
+        data-aos="fade-up"
+        className="bg-light text-dark p-5 p-lg-0 pt-lg-5 pb-lg-5 text-center text-sm-start"
+      >
         <div className="container">
           <h1 className="text-center">Opening | Hours</h1>
           <p className="text-center pt-2 text-md">
