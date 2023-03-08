@@ -10,7 +10,7 @@ import { CgMail } from 'react-icons/cg';
 
 export default function Footer() {
   return (
-    <MDBFooter className="bg-dark text-center text-white w-100" data-aos="fade-up">
+    <MDBFooter className="bg-dark text-center text-white w-100">
       {/* Social Meadia Icons */}
       <section className="mb-4 pt-4 d-flex gap-4 align-items-center justify-content-center">
         <div
